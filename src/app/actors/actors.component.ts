@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { AVENGERS_ACTORS } from './mock-actors';
+import { ACTORS } from './mock-actors';
 
 @Component({
   selector: 'app-actors',
@@ -9,7 +9,7 @@ import { AVENGERS_ACTORS } from './mock-actors';
 })
 export class ActorsComponent implements OnInit {
 
-  actors = AVENGERS_ACTORS;
+  actors = ACTORS;
 
   constructor() { }
 
