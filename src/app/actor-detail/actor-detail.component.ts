@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Component, OnInit, Input } from '@angular/core';
-import { ACTORS } from './mock-actors';
+
+
 
 @Component({
   selector: 'app-actor-detail',
@@ -8,7 +9,8 @@ import { ACTORS } from './mock-actors';
   styleUrls: ['./actor-detail.component.css']
 })
 export class ActorDetailComponent implements OnInit {
-    @Input() actor: Actor;
+
+ @Input() actor:Actor ;
 
   constructor() { }
 

@@ -10,10 +10,15 @@ import { ACTORS } from './mock-actors';
 export class ActorsComponent implements OnInit {
 
   actors = ACTORS;
+  selectedActor: Actor;
+
 
   constructor() { }
 
   ngOnInit() {
   }
+  onSelect(actor: Actor): void {
+      this.selectedActor = actor;
+    }
 
 }

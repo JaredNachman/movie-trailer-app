@@ -1,12 +1,19 @@
-<div class="container">
-  <div class="row justify-content-md-center">
-    <div *ngFor="let actor of actors" class="col col-lg-4">
-      <h2>{{actor.name}}</h2>
-      <ul>
-        <li *ngFor="let movie of actor.movies">
-          <a href="{{movie.trailerURL}}">{{movie.name}}</a>
-        </li>
-      </ul>
+<h2>Featured Actors</h2>
+
+<div class="actors">
+    <div class="row justify-content-around">
+    <div *ngFor="let actor of actors" [class.selected]="actor === selectedActor" (click)="onSelect(actor)">
+      <div class="col-lg-4">
+        <a routerLink="/actor-detail">
+          <img src="{{actor.actorimg}}">
+        </a>
+        <br>
+          <div class="row justify-content-around">
+                <div class="col-lg-4">
+        {{actor.name}}
+        </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+  <app-actor-detail [actor]="selectedActor"></app-actor-detail>

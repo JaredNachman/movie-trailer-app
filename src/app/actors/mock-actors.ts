@@ -1,4 +1,5 @@
 import { Actor } from './actor';
+
 import { BAYWATCH_MOVIE } from './mock-movies';
 import { SANANDREAS_MOVIE } from './mock-movies';
 import { SKYSCRAPER_MOVIE } from './mock-movies';
@@ -11,19 +12,19 @@ import { DOWNSIZING_MOVIE } from './mock-movies';
 
 export const DWAYNE_JOHNSON: Actor = {
   name: 'Dwayne Johnson',
-  actorimg: 'h',
+  actorimg: 'assets/images/dwaynejohnson.jpg',
   movies: [BAYWATCH_MOVIE, SANANDREAS_MOVIE, SKYSCRAPER_MOVIE]
 };
 
 const TOM_CRUISE: Actor = {
   name: 'Tom Cruise',
-  actorimg: 'h',
+  actorimg: 'assets/images/tomcruise.jpg',
   movies: [TOPGUN_MOVIE, MISSIONIMPOSSIBLE_MOVIE, THEMUMMY_MOVIE]
 };
 
 const MATT_DAMON: Actor = {
   name: 'Matt Damon',
-  actorimg: 'h',
+  actorimg: 'assets/images/mattdamon.jpg',
   movies: [THEMARTIAN_MOVIE, JASONBOURNE_MOVIE, DOWNSIZING_MOVIE]
 };
 

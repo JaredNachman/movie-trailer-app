@@ -5,15 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActorsComponent } from './actors/actors.component';
 import { ActorDetailComponent } from './actor-detail/actor-detail.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
+
   declarations: [
     AppComponent,
     ActorsComponent,
-    ActorDetailComponent
+    ActorDetailComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
