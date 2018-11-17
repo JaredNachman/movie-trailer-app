@@ -1,17 +1,17 @@
 <h2>Featured Actors</h2>
 
 <div class="actors">
-    <div class="row justify-content-around">
+  <div class="row justify-content-around">
     <div *ngFor="let actor of actors" [class.selected]="actor === selectedActor" (click)="onSelect(actor)">
       <div class="col-lg-4">
         <a routerLink="/actor-detail">
           <img src="{{actor.actorimg}}">
         </a>
         <br>
-          <div class="row justify-content-around">
-                <div class="col-lg-4">
-        {{actor.name}}
-        </div>
+        <div class="row justify-content-around">
+          <div class="col-lg-4">
+            {{actor.name}}
+          </div>
         </div>
       </div>
     </div>

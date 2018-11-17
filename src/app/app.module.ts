@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActorsComponent } from './actors/actors.component';
 import { ActorDetailComponent } from './actor-detail/actor-detail.component';
-import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
 
@@ -13,7 +13,7 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     ActorsComponent,
     ActorDetailComponent,
-    HomeComponent
+
   ],
   imports: [
     BrowserModule,

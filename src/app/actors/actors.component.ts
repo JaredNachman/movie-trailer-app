@@ -1,6 +1,7 @@
+
 import { Component, OnInit } from '@angular/core';
 
-import { ACTORS } from './mock-actors';
+import { ALL_ACTORS } from './mock-actors';
 
 @Component({
   selector: 'app-actors',
@@ -9,7 +10,7 @@ import { ACTORS } from './mock-actors';
 })
 export class ActorsComponent implements OnInit {
 
-  actors = ACTORS;
+  actors = ALL_ACTORS;
   selectedActor: Actor;
 
 
