@@ -1,7 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { Component, OnInit, Input } from '@angular/core';
-
-
+import { Actor } from '../actors/actor';
 
 @Component({
   selector: 'app-actor-detail',
@@ -10,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ActorDetailComponent implements OnInit {
 
- @Input() actor:Actor ;
+ @Input() actor: Actor;
 
   constructor() { }
 

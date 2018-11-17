@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 
+import { Actor } from './actor'
 import { ALL_ACTORS } from './mock-actors';
 
 @Component({

@@ -12,8 +12,7 @@ import { ActorDetailComponent } from './actor-detail/actor-detail.component';
   declarations: [
     AppComponent,
     ActorsComponent,
-    ActorDetailComponent,
-
+    ActorDetailComponent
   ],
   imports: [
     BrowserModule,
