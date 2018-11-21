@@ -1,4 +1,6 @@
-<div *ngIf="actor">
-<p>
-  {{actor.name}}
-</p>
+<h2>{{actor.name}}</h2>
+<ul>
+  <li *ngFor="let movie of actor.movies">
+    <a href="{{movie.trailerURL}}">{{movie.name}}</a>
+  </li>
+</ul>

@@ -1,8 +1,7 @@
-
 import { Component, OnInit } from '@angular/core';
 
-import { Actor } from './actor'
-import { ALL_ACTORS } from './mock-actors';
+import { Actor } from './actor';
+import { ActorService } from '../actor.service';
 
 @Component({
   selector: 'app-actors',
@@ -11,16 +10,16 @@ import { ALL_ACTORS } from './mock-actors';
 })
 export class ActorsComponent implements OnInit {
 
-  actors = ALL_ACTORS;
-  selectedActor: Actor;
+  actors: Actor[];
 
-
-  constructor() { }
+  constructor(private actorService: ActorService) { }
 
   ngOnInit() {
+    this.getActors();
   }
-  onSelect(actor: Actor): void {
-      this.selectedActor = actor;
-    }
+
+  getActors(): void {
+    this.actors = this.actorService.getActors();
+  }
 
 }
