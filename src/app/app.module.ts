@@ -7,6 +7,7 @@ import { ActorsComponent } from './actors/actors.component';
 import { ActorDetailComponent } from './actor-detail/actor-detail.component';
 import { ActorSearchComponent } from './actor-search/actor-search.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -17,7 +18,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     ActorsComponent,
     ActorDetailComponent,
     ActorSearchComponent,
-    NavigationComponent
+    NavigationComponent,
+    FooterComponent
 
   ],
   imports: [
