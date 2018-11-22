@@ -9,8 +9,7 @@ import { ActorDetailComponent }      from './actor-detail/actor-detail.component
 
 const routes: Routes = [
   { path: '', component: ActorsComponent },
-  { path: 'actors', component: ActorsComponent },
-  { path: 'actor-detail', component: ActorDetailComponent }
+ { path: 'detail/:id', component: ActorDetailComponent }
 
 
 ];

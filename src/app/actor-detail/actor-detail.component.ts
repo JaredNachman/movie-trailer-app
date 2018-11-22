@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Actor } from '../actors/actor';
 import { ActorService } from '../actor.service';
+
+
+
+
  @Component({
   selector: 'app-actor-detail',
   templateUrl: './actor-detail.component.html',
   styleUrls: ['./actor-detail.component.css']
 })
 export class ActorDetailComponent implements OnInit {
-  actor: Actor;
+  @Input() actor: Actor;
   constructor(
     private actorService: ActorService,
      private route: ActivatedRoute,

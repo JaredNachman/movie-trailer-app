@@ -1,64 +1,64 @@
 import { Movie } from './movie';
 
 export const BAYWATCH_MOVIE: Movie = {
-  name: 'h',
-  trailerURL: 'h',
-  posterURL: 'h',
+  name: 'Baywatch',
+  trailerURL: 'https://www.youtube.com/watch?v=wi8S4FhoPE4',
+  posterURL: 'assets/images/baywatch.jpg',
   releasedate: 'h'
 };
 
 export const SANANDREAS_MOVIE: Movie = {
-  name: 'h',
+  name: 'San Andreas',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/sanandreas.jpg',
   releasedate: 'h'
 };
 
 export const SKYSCRAPER_MOVIE: Movie = {
-  name: 'h',
+  name: 'Skyscraper',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/skyscraper.jpg',
   releasedate: 'h'
 };
 
 export const TOPGUN_MOVIE: Movie = {
-  name: 'h',
+  name: 'Top Gun',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/topgun.jpg',
   releasedate: 'h'
 };
 
 export const MISSIONIMPOSSIBLE_MOVIE: Movie = {
-  name: 'h',
+  name: 'Mission Impossible',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/missionimpossible.jpg',
   releasedate: 'h'
 };
 
 export const THEMUMMY_MOVIE: Movie = {
-  name: 'h',
+  name: 'The Mummy',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/themummy.jpg',
   releasedate: 'h'
 };
 
 export const THEMARTIAN_MOVIE: Movie = {
-  name: 'h',
+  name: 'The Martian',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/themartian.jpg',
   releasedate: 'h'
 };
 
 export const JASONBOURNE_MOVIE: Movie = {
-  name: 'h',
+  name: 'Jason Bourne',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/jasonbourne.jpg',
   releasedate: 'h'
 };
 
 export const DOWNSIZING_MOVIE: Movie = {
-  name: 'h',
+  name: 'Downsizing',
   trailerURL: 'h',
-  posterURL: 'h',
+  posterURL: 'assets/images/downsizing.jpg',
   releasedate: 'h'
 };

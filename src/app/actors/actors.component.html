@@ -4,7 +4,7 @@
   <div class="row justify-content-around">
     <div *ngFor="let actor of actors" [class.selected]="actor === selectedActor" (click)="onSelect(actor)">
       <div class="col-lg-4">
-        <a routerLink="/actor-detail">
+        <a routerLink="/detail/{{actor.id}}">
           <img src="{{actor.actorimg}}">
         </a>
         <br>
@@ -16,5 +16,4 @@
       </div>
     </div>
   </div>
-
-  
+<app-actor-detail [actor]="selectedActor"></app-actor-detail>

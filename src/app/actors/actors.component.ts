@@ -10,6 +10,8 @@ import { ActorService } from '../actor.service';
 })
 export class ActorsComponent implements OnInit {
 
+  selectedActor: Actor;
+
   actors: Actor[];
 
   constructor(private actorService: ActorService) { }
