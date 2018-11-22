@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ActorsComponent } from './actors/actors.component';
 import { ActorDetailComponent } from './actor-detail/actor-detail.component';
 import { ActorSearchComponent } from './actor-search/actor-search.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 
@@ -15,7 +16,8 @@ import { ActorSearchComponent } from './actor-search/actor-search.component';
     AppComponent,
     ActorsComponent,
     ActorDetailComponent,
-    ActorSearchComponent
+    ActorSearchComponent,
+    NavigationComponent
 
   ],
   imports: [

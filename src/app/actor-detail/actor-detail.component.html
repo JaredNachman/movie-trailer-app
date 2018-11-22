@@ -1,20 +1,25 @@
-<h2>{{actor.name}}</h2>
+<h2>{{actor.name}} Movies</h2><br>
 
 <div class="movies">
   <div class="row justify-content-around">
+    <div class="col-lg-12">
     <div *ngFor="let movie of actor.movies">
-      <div class="col-lg-4">
-        <a href="{{movie.trailerURL}}" target="_blank">
-          <img src="{{movie.posterURL}}">
-
-        </a>
+      <a href="{{movie.trailerURL}}" target="_blank">
+        <img src="{{movie.posterURL}}">
+      </a>
         <br>
-        <div class="row justify-content-around">
-          <div class="col-lg-4">
-            {{movie.name}}
-            {{movie.releasedate}}
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h3>{{movie.name}}</h3>
+            <div class="row justify-content-center">
+              <div class="col-lg-6">
+                Release Date: {{movie.releasedate}}
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+    
