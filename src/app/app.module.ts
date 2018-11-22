@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActorsComponent } from './actors/actors.component';
 import { ActorDetailComponent } from './actor-detail/actor-detail.component';
+import { ActorSearchComponent } from './actor-search/actor-search.component';
+
 
 
 @NgModule({
@@ -12,7 +14,9 @@ import { ActorDetailComponent } from './actor-detail/actor-detail.component';
   declarations: [
     AppComponent,
     ActorsComponent,
-    ActorDetailComponent
+    ActorDetailComponent,
+    ActorSearchComponent
+
   ],
   imports: [
     BrowserModule,

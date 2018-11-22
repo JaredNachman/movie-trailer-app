@@ -25,4 +25,5 @@ export class ActorDetailComponent implements OnInit {
     const id = +this.route.snapshot.paramMap.get('id');
     this.actor = this.actorService.getActor(id);
   }
+
  }
