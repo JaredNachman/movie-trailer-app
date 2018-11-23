@@ -9,7 +9,7 @@
 #myFooter .footer-copyright{
     margin-bottom: 35px;
     text-align: center;
-    color: #777;
+    color: #FFFFFF;
 }
 
 #myFooter ul{
@@ -98,9 +98,16 @@ body{
    flex: 1 0 auto;
    -webkit-flex: 1 0 auto;
    min-height: 200px;
+
 }
+
+.footertitle, .footer-copyright {
+  		font-family: oswaldo;
+}
+
 
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
+       background-color: #557A95;
 }

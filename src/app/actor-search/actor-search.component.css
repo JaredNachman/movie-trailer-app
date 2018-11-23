@@ -27,8 +27,11 @@
   color: white;
 }
 #search-box {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
   width: 200px;
-  height: 20px;
+  height: 40px;
 }
 
 

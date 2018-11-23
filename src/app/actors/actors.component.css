@@ -1,6 +1,22 @@
+body {
+	background-color: #B1A296;
+
+}
+
+
+.actorname {
+	font-family: sans-serif;
+}
+.featuredactors {
+	font-family: oswaldo;
+	border-style: double;
+
+
+}
 .gallery-block{
 	padding-bottom: 60px;
 	padding-top: 60px;
+
 }
 
 .gallery-block .heading{
@@ -30,6 +46,7 @@
 
 .gallery-block.cards-gallery .card-body {
   text-align: center;
+		  background-color: #557A95;
 }
 
 .gallery-block.cards-gallery .card-body p {

@@ -5,31 +5,41 @@
   <title>{{actor.name}} Movies</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
-
 </head>
-<app-navigation></app-navigation>
+
 <body>
   <section class="gallery-block cards-gallery">
     <div class="container">
       <div class="heading">
-        <h2>{{actor.name}} Movies</h2>
+        <h2 class="actormovies">{{actor.name}} Movies</h2>
       </div>
-      <div class="row jusify-content-center">
-        <div *ngFor="let movie of actor.movies">
+      <div *ngFor="let movie of actor.movies">
+        <div class="row justify-content-center">
           <div class="col-lg-12">
             <div class="card border-0">
-              <div class="col-lg-4">
-                <h2>{{movie.name}}</h2>
-                <a class="lightbox" href="{{movie.trailerURL}}" target="_blank">
-                  <img src="{{movie.posterURL}}" alt="Card Image" class="card-img-top">
-                </a>
-                <div class="col-lg-100%">
-                  <div class="card-body">
+              <div style="margin-top:30px;">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <a class="lightbox" href="{{movie.trailerURL}}" target="_blank">
+                      <img src="{{movie.posterURL}}" alt="Card Image" class="card-img-top" style="margin-left:30px; margin-bottom:30px;">
+                    </a>
                   </div>
-                  <h6><a href="#">Lorem Ipsum</a></h6>
-                  <p class="text-muted card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna.</p>
+                  <div class="col-lg-8">
+                    <div class="card-body">
+                      <h2 class="moviename">{{movie.name}}</h2><br>
+                      <div class="row justify-content-right">
+                        <div class="col-lg-8">
+                          <a href="{{movie.trailerURL}}" target="_blank">
+                            <button class="button button2">Watch {{movie.name}} Trailer</button>
+                          </a>
+                        </div>
+                        <div class="col-lg-4">
+                          <h6 class="releasedate">Release Date: {{movie.releasedate}}</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
@@ -37,4 +47,3 @@
       </div>
     </div>
   </section>
-  <app-footer></app-footer>
