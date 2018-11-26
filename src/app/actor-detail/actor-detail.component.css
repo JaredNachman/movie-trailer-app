@@ -9,7 +9,9 @@
 .actormovies {
 
 		font-family: oswaldo;
+		border-color: black;
 		border-style: double;
+		color: #557A95;
 }
 
 .moviename {
@@ -34,7 +36,7 @@
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
-	margin-left: -10px;
+
 }
 
 .button2:hover {
@@ -53,9 +55,7 @@
 }
 
 .gallery-block .heading h2{
-    font-weight: bold;
-    font-size: 1.4rem;
-    text-transform: uppercase;
+
 }
 
 .gallery-block.cards-gallery h6 {
@@ -85,6 +85,9 @@
   color: #212529;
 
 }
+
+
+
 
 .gallery-block.cards-gallery a:hover {
   text-decoration: none;

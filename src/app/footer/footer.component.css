@@ -9,8 +9,8 @@
 #myFooter .footer-copyright{
     margin-bottom: 35px;
     text-align: center;
-    color: #FFFFFF;
-}
+    color: #B1A296;
+  }
 
 #myFooter ul{
     list-style-type: none;
@@ -52,30 +52,6 @@
     transition:color 0.2s;
 }
 
-#myFooter .fa-facebook:hover{
-   color: #2b55ff;
-}
-
-#myFooter .fa-facebook:focus{
-    color: #2b55ff;
-}
-
-#myFooter .fa-google-plus:hover{
-    color:red;
-}
-
-#myFooter .fa-google-plus:focus{
-    color:red;
-}
-
-#myFooter .fa-twitter:hover{
-    color: #00aced;
-
-}
-
-#myFooter .fa-twitter:focus{
-    color:#00aced;
-}
 
 
 
@@ -103,6 +79,7 @@ body{
 
 .footertitle, .footer-copyright {
   		font-family: oswaldo;
+      color: #B1A296;
 }
 
 

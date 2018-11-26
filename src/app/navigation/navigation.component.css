@@ -27,17 +27,19 @@ body {
 
 .title {
   font-family: oswald;
+  color: #B1A296;
 }
 
 .topnav a.active:hover {
   background-color: #379683;
-  color: white;
+  color: #557A95;
 }
 
 .topnav a.active {
   background-color: #5D5C61;
-  color: white;
+  color: #B1A296;
   padding-top: 20px;
+
 }
 
 .topnav input[type=text] {
