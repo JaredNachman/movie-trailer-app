@@ -1,6 +1,7 @@
 export class Movie {
-  name: string;
-  posterURL: string;
+  id: number;
+  title: string;
+  poster_path: string;
   trailerURL: string;
-  releasedate: string;
+  release_date: string;
 }

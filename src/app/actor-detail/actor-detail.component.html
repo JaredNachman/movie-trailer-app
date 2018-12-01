@@ -21,12 +21,12 @@
                 <div class="row">
                   <div class="col-lg-3">
                     <a class="lightbox" href="{{movie.trailerURL}}" target="_blank">
-                      <img src="{{movie.posterURL}}" alt="Card Image" class="card-img-top" style="margin-left:30px; margin-bottom:30px;">
+                      <img src="{{movie.poster_path}}" alt="Movie Poster" class="card-img-top" style="margin-left:30px; margin-bottom:30px;">
                     </a>
                   </div>
                   <div class="col-lg-8">
                     <div class="card-body">
-                      <h2 class="moviename">{{movie.name}}</h2><br>
+                      <h2 class="moviename">{{movie.title}}</h2><br>
                       <div class="row justify-content-center">
                         <div class="col-lg-7">
                           <a href="{{movie.trailerURL}}" target="_blank">
@@ -34,7 +34,7 @@
                           </a>
                         </div>
                         <div class="col-lg-5">
-                          <h6 class="releasedate">Release Date: {{movie.releasedate}}</h6>
+                          <h6 class="releasedate">Release Date: {{movie.release_date}}</h6>
                         </div>
                       </div>
                     </div>
