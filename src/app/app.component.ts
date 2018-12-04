@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'movie-trailer-app';
+
+  constructor( private http: HttpClient ) { //dependency injection, creating an instance of HttpClient called http
+    }
 }
