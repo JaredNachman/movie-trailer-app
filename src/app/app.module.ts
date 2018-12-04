@@ -2,6 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MyInterceptor } from './my.interceptor';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActorsComponent } from './actors/actors.component';
@@ -12,9 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MovieService } from './movie.service';
 
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { SearchComponent } from './search/search.component';
-
+import { MoviesearchComponent } from './moviesearch/moviesearch.component';
 
 
 
@@ -26,32 +29,21 @@ import { SearchComponent } from './search/search.component';
     ActorDetailComponent,
     ActorSearchComponent,
     NavigationComponent,
-<<<<<<< HEAD
     FooterComponent,
-    HomeComponent,
-    SearchComponent,
+    MoviesearchComponent,
 
 
-=======
-    FooterComponent
->>>>>>> parent of 73f5068... Feat: stage 1 final push
 
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
     AppRoutingModule,
     HttpClientModule,
           FormsModule,
-           
+
   ],
   providers: [ MovieService ],
 
-=======
-    AppRoutingModule
-  ],
-  providers: [],
->>>>>>> parent of 73f5068... Feat: stage 1 final push
   bootstrap: [AppComponent]
 })
 export class AppModule { }

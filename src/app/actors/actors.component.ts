@@ -5,6 +5,7 @@ import { ActorService } from '../actor.service';
 
 
 
+
 @Component({
   selector: 'app-actors',
   templateUrl: './actors.component.html',
