@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Actor } from './actor';
 import { ActorService } from '../actor.service';
 
+
+
 @Component({
   selector: 'app-actors',
   templateUrl: './actors.component.html',
@@ -10,18 +12,20 @@ import { ActorService } from '../actor.service';
 })
 export class ActorsComponent implements OnInit {
 
-  selectedActor: Actor;
 
-  actors: Actor[];
+  constructor(private actorService: ActorService) {}
 
-  constructor(private actorService: ActorService) { }
+
+
+
 
   ngOnInit() {
     this.getActors();
   }
 
-  getActors(): void {
-    this.actors = this.actorService.getActors();
+    getActors(): void {
+      this.actors = this.actorService.getActors();
   }
+
 
 }
