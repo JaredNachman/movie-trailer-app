@@ -17,7 +17,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MovieService } from './movie.service';
 
 import { RouterModule, Routes } from '@angular/router';
-import { MoviesearchComponent } from './moviesearch/moviesearch.component';
+import { MovieSearchComponent } from './moviesearch/moviesearch.component';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -30,7 +31,8 @@ import { MoviesearchComponent } from './moviesearch/moviesearch.component';
     ActorSearchComponent,
     NavigationComponent,
     FooterComponent,
-    MoviesearchComponent,
+    MovieSearchComponent,
+    SearchComponent,
 
 
 

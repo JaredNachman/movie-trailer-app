@@ -1,89 +1,105 @@
-<div class="row">
-  <div class="col-sm-12 mt-5">
-    <h3>Search a Movie</h3>
-    <form (submit)="searchMovie()">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search a movie here" name="searchStr" [(ngModel)]="searchStr">
-      </div>
-      <button class="btn btn-info">Find Movie</button>
-      </form>
-  </div>
-</div>
 
-<div *ngIf="searchStr">
+<div class="container">
+
   <div class="row">
-    <div class="col-sm-3" *ngFor="let movie of searchresult; let i = index">
-      <div *ngIf="i < 8">
-      <div class="card mt-2 mb-2">
-        <div class="card-header text-center">
-          {{ movie.release_date | date:'yyyy' }}
+    <div class="col-sm-12">
+      <br>
+      <h1 class="searchtitle">Search Movies</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <form>
+        <div class="row">
+          <div class="col-9">
+            <input type="text" class="form-control" placeholder="Search Movies" name="movie" [(ngModel)]="movie">
+          </div>
+          <div class="col-3">
+            <button  class="button" (click)="searchMovies()">Search</button>
+          </div>
         </div>
-        <div class="card-body">
-          <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="{{ movie.title }}" class="img-fluid">
-          <p class="text-center mt-2">
-            {{ movie.title }}
-          </p>
-          <a href="#" class="btn btn-block btn-info mt-2" routerLink="/movie/{{movie.id}}">
-            View Details
-          </a>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <section class="gallery-block cards-gallery">
+    <div class="container">
+      <div class="heading">
+      </div>
+      <div *ngFor="let movie of search_result; let i = index">
+        <div *ngIf="i < 9">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="card border-0">
+                <div style="margin-top:30px;">
+                  <div class="row">
+                    <div class="col-lg-3">
+
+                      <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="{{ movie.original_title }} Poster Image" class="card-img-top" style="margin-left:30px; margin-bottom:30px;">
+
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="card-body">
+                        <h2 class="moviename">{{ movie.original_title }}</h2><br>
+                        <div class="row justify-content-center">
+                          <div class="col-lg-2">
+                            </div>
+                            <div class="col-lg-4">
+<h6 class="releasedate"> Rating: {{movie.vote_average}}/10</h6>
+                          </div>
+                          <div class="col-lg-1">
+                            </div>
+                          <div class="col-lg-5">
+                            <h6 class="releasedate"> Release Date: {{ movie.release_date | date:'mediumDate':'yyyy' }}</h6>
+                          </div>
+                          <br><br>
+
+
+                          <div class="col-lg-2">
+                          </div>
+                          <div class="col-lg-3">
+                            <h6 class="releasedate">Summary:</h6>
+                          </div>
+                          <div class="col-lg-7 justify-content-left">
+                            <p align="left" style="float:right; color:black; ">
+                               {{ movie.overview }}
+                            </p>
+                          </div>
+
+
+
+
+
+
+
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
     </div>
-  </div>
-</div>
+  </section>
 
-<hr>
 
-<!-- Upcoming Movies -->
-<div class="row">
-  <div class="col-sm-12">
-    <h3>Upcoming Movies</h3>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-sm-3" *ngFor="let upcoming of upcoming_movies; let i = index">
-    <div *ngIf="i < 8">
-    <div class="card mt-2 mb-2">
-      <div class="card-header text-center align-middle">
-        {{ upcoming.release_date | date:'dd-MM-yyyy' }}
-      </div>
-      <div class="card-body">
-        <img src="https://image.tmdb.org/t/p/w500/{{ upcoming.poster_path }}" alt="{{ upcoming.title }}" class="img-fluid">
-        <p class="text-center mt-2">{{ upcoming.title }} </p>
-        <a href="#" class="btn btn-block btn-info mt-2" routerLink="/movie/{{upcoming.id}}">
-          View Details
-        </a>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
 
-<hr>
 
-<!-- Popular Movies -->
-<div class="row">
-  <div class="col-sm-12">
-    <h3>Popular Movies</h3>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-sm-3" *ngFor="let movie of popular_movies; let i = index">
-    <div *ngIf="i < 8">
-    <div class="card mt-2 mb-2">
-      <div class="card-header text-center">
-        {{ movie.title }}
-      </div>
-      <div class="card-body">
-        <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="{{ movie.title }}" class="img-fluid">
-        <a href="#" class="btn btn-block btn-info mt-2" routerLink="/movie/{{movie.id}}">
-          View Details
-        </a>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
+
+
+
+
+
+
+  <router-outlet></router-outlet>

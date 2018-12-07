@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
 </head>
-
 <body>
   <section class="gallery-block cards-gallery">
     <div class="container">
@@ -28,13 +27,15 @@
                     <div class="card-body">
                       <h2 class="moviename">{{movie.name}}</h2><br>
                       <div class="row justify-content-center">
-                        <div class="col-lg-7">
+                        <div class="col-lg-5">
+                          <h6 class="releasedate">Release Date: {{movie.releasedate}}</h6>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="col-lg-12 justify-content-center">
                           <a href="{{movie.trailerURL}}" target="_blank">
                             <button class="button button2">Watch {{movie.name}} Trailer</button>
                           </a>
-                        </div>
-                        <div class="col-lg-5">
-                          <h6 class="releasedate">Release Date: {{movie.releasedate}}</h6>
                         </div>
                       </div>
                     </div>

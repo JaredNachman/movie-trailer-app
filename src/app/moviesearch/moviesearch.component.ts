@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { MovieService } from '../movie.service';
@@ -10,12 +11,13 @@ import { MovieService } from '../movie.service';
   templateUrl: './moviesearch.component.html',
   styleUrls: ['./moviesearch.component.css']
 })
-export class MoviesearchComponent implements OnInit {
+export class MovieSearchComponent implements OnInit {
 
   popular_movies: any;
     upcoming_movies: any;
     search_result: any;
     movie: any;
+    runtime: number;
 
     constructor(public movieService: MovieService) {
       // get upcoming movies
@@ -41,6 +43,6 @@ export class MoviesearchComponent implements OnInit {
     }
 
     ngOnInit() {
-    }
+
 
   }
