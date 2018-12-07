@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { MyInterceptor } from './my.interceptor';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
