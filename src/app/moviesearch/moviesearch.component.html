@@ -1,13 +1,10 @@
-
 <div class="container">
-
   <div class="row">
     <div class="col-sm-12">
       <br>
       <h1 class="searchtitle">Search Movies</h1>
     </div>
   </div>
-
   <div class="row">
     <div class="col-sm-12">
       <form>
@@ -16,16 +13,12 @@
             <input type="text" class="form-control" placeholder="Search Movies" name="movie" [(ngModel)]="movie">
           </div>
           <div class="col-3">
-            <button  class="button" (click)="searchMovies()">Search</button>
+            <button class="button" (click)="searchMovies()">Search</button>
           </div>
         </div>
       </form>
     </div>
   </div>
-
-
-
-
   <section class="gallery-block cards-gallery">
     <div class="container">
       <div class="heading">
@@ -38,27 +31,23 @@
                 <div style="margin-top:30px;">
                   <div class="row">
                     <div class="col-lg-3">
-
                       <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="{{ movie.original_title }} Poster Image" class="card-img-top" style="margin-left:30px; margin-bottom:30px;">
-
                     </div>
                     <div class="col-lg-8">
                       <div class="card-body">
                         <h2 class="moviename">{{ movie.original_title }}</h2><br>
                         <div class="row justify-content-center">
                           <div class="col-lg-2">
-                            </div>
-                            <div class="col-lg-4">
-<h6 class="releasedate"> Rating: {{movie.vote_average}}/10</h6>
+                          </div>
+                          <div class="col-lg-4">
+                            <h6 class="releasedate"> Rating: {{movie.vote_average}}/10</h6>
                           </div>
                           <div class="col-lg-1">
-                            </div>
+                          </div>
                           <div class="col-lg-5">
                             <h6 class="releasedate"> Release Date: {{ movie.release_date | date:'mediumDate':'yyyy' }}</h6>
                           </div>
                           <br><br>
-
-
                           <div class="col-lg-2">
                           </div>
                           <div class="col-lg-3">
@@ -66,18 +55,9 @@
                           </div>
                           <div class="col-lg-7 justify-content-left">
                             <p align="left" style="float:right; color:black; ">
-                               {{ movie.overview }}
+                              {{ movie.overview }}
                             </p>
                           </div>
-
-
-
-
-
-
-
-
-
                         </div>
                       </div>
                     </div>
@@ -90,8 +70,6 @@
       </div>
     </div>
   </section>
-
-
 
 
 

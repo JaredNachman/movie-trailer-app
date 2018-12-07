@@ -24,9 +24,9 @@ export class ActorsComponent implements OnInit {
     this.getActors();
   }
 
-    getActors(): void {
-      this.actors = this.actorService.getActors();
-  }
+  getActors(): void {
+    this.actors = this.actorService.getActors();
+}
 
 
 }

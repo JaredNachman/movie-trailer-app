@@ -7,22 +7,12 @@ import { ActorDetailComponent } from './actor-detail/actor-detail.component';
 import { MovieSearchComponent } from './moviesearch/moviesearch.component';
 import { SearchComponent } from './search/search.component';
 
-
-
-
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'detail/:id', component: ActorDetailComponent },
- { path: 'home', component: ActorsComponent },
- { path: 'moviesearch', component: MovieSearchComponent },
- { path: 'search', component: SearchComponent }
-
-
-
-
-
-
-
+  { path: 'home', component: ActorsComponent },
+  { path: 'moviesearch', component: MovieSearchComponent },
+  { path: 'search', component: SearchComponent }
 ];
 
 @NgModule({

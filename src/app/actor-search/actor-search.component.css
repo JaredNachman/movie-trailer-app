@@ -2,7 +2,7 @@
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
   border-right: 1px solid gray;
-  width:195px;
+  width: 195px;
   height: 16px;
   padding: 5px;
   background-color: white;
@@ -23,9 +23,11 @@
 .search-result li a:hover {
   color: white;
 }
+
 .search-result li a:active {
   color: white;
 }
+
 #search-box {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -33,7 +35,6 @@
   width: 200px;
   height: 40px;
 }
-
 
 ul.search-result {
   margin-top: 0;

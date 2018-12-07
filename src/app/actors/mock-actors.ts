@@ -31,9 +31,6 @@ const MATT_DAMON: Actor = {
   movies: [THEMARTIAN_MOVIE, JASONBOURNE_MOVIE, DOWNSIZING_MOVIE]
 };
 
-
-
-
 export const ALL_ACTORS: Actor[] = [
   DWAYNE_JOHNSON,
   TOM_CRUISE,

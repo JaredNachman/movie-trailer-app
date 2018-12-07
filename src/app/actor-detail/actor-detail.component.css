@@ -1,71 +1,64 @@
-.gallery-block{
-	padding-bottom: 60px;
-	padding-top: 60px;
-	background-color: #B1A296;
+.gallery-block {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: #B1A296;
 }
 
-
-
 .actormovies {
-
-		font-family: oswaldo;
-		border-color: black;
-		border-style: double;
-		color: #557A95;
+  font-family: oswaldo;
+  border-color: black;
+  border-style: double;
+  color: #557A95;
 }
 
 .moviename {
-		font-family: oswaldo;
-		border-style: outset;
-	margin-left: 90px;
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-
+  font-family: oswaldo;
+  border-style: outset;
+  margin-left: 90px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .button {
-    background-color: #5D5C61;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-
+  background-color: #5D5C61;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
 }
 
 .button2:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-		background-color: #379683;
-    color: white;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background-color: #379683;
+  color: white;
 }
 
 .releasedate {
-	font-family: oswaldo;
+  font-family: oswaldo;
 }
 
-.gallery-block .heading{
-    margin-bottom: 50px;
-    text-align: center;
+.gallery-block .heading {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.gallery-block .heading h2{
-
-}
+.gallery-block .heading h2 {}
 
 .gallery-block.cards-gallery h6 {
   font-size: 17px;
   font-weight: bold;
 }
 
-.gallery-block.cards-gallery .card{
+.gallery-block.cards-gallery .card {
   transition: 0.4s ease;
-		background-color: #7395AE;
+  background-color: #7395AE;
 }
 
 .gallery-block.cards-gallery .card img {
@@ -74,7 +67,6 @@
 
 .gallery-block.cards-gallery .card-body {
   text-align: center;
-
 }
 
 .gallery-block.cards-gallery .card-body p {
@@ -83,11 +75,7 @@
 
 .gallery-block.cards-gallery a {
   color: #212529;
-
 }
-
-
-
 
 .gallery-block.cards-gallery a:hover {
   text-decoration: none;
@@ -95,13 +83,12 @@
 
 .gallery-block.cards-gallery .card {
   margin-bottom: 30px;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (min-width: 576px) {
-
-	.gallery-block .transform-on-hover:hover {
-	    transform: translateY(-10px) scale(1.02);
-	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
-	}
+  .gallery-block .transform-on-hover:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important;
+  }
 }
