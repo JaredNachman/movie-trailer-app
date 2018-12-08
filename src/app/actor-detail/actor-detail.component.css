@@ -11,6 +11,13 @@
   color: #557A95;
 }
 
+.releasedate {
+  font-family: oswaldo;
+  color: black;
+  font-family: oswaldo;
+  border-style: double;
+}
+
 .moviename {
   font-family: oswaldo;
   border-style: outset;

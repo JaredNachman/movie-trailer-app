@@ -26,17 +26,32 @@
                   </div>
                   <div class="col-lg-8">
                     <div class="card-body">
-                      <h2 class="moviename">{{movie.name}}</h2><br>
+                      <h2 class="moviename">{{movie.name}}</h2>
+                    <br>
                       <div class="row justify-content-center">
-                        <div class="col-lg-5">
-                          <h6 class="releasedate">Release Date: {{movie.releasedate}}</h6>
+                        <div class="col-lg-2">
                         </div>
-                        <br>
-                        <br>
-                        <div class="col-lg-12 justify-content-center">
-                          <a href="{{movie.trailerURL}}" target="_blank">
-                            <button class="button button2">Watch {{movie.name}} Trailer</button>
-                          </a>
+                        <div class="col-lg-4">
+                          <h6 class="releasedate"> Rating: {{movie.rating}}/10</h6>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <div class="col-lg-5">
+                          <h6 class="releasedate"> Release Date: {{ movie.releasedate | date:'mediumDate':'yyyy' }}</h6>
+                        </div>
+                        <br><br>
+                        <div class="col-lg-2">
+                        </div>
+                        <div class="col-lg-3">
+                          <h6 class="releasedate">Summary:</h6><br>
+                            <a href="{{movie.trailerURL}}" target="_blank">
+                              <button class="button button2">Watch Trailer</button>
+                            </a>
+                        </div>
+                        <div class="col-lg-7 justify-content-left">
+                          <p align="left" style="float:right; color:black; ">
+                            {{ movie.summary }}
+                          </p>
                         </div>
                       </div>
                     </div>

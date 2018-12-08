@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Actor } from './actor';
 import { ActorService } from '../actor.service';
 
@@ -13,20 +12,19 @@ import { ActorService } from '../actor.service';
 })
 export class ActorsComponent implements OnInit {
 
+  actors: Actor[];
 
   constructor(private actorService: ActorService) {}
 
-
-
-
+  getActors(): void {
+    this.actors = this.actorService.getActors();
+  }
 
   ngOnInit() {
     this.getActors();
   }
 
-  getActors(): void {
-    this.actors = this.actorService.getActors();
-}
+
 
 
 }
