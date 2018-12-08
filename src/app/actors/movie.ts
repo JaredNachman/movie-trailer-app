@@ -3,4 +3,6 @@ export class Movie {
   posterURL: string;
   trailerURL: string;
   releasedate: string;
+  summary: string;
+  rating: number;
 }
